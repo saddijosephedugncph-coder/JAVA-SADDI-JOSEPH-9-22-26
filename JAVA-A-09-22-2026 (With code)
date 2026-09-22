@@ -1,0 +1,79 @@
+import java.util.Scanner;
+
+public class Main { 
+    public static void main(String[] args) {
+        System.out.println("Hello World"); 
+        
+  int age = 67;
+  double price = 67.67;
+  float weight = 67.6f;
+  char grade = 'A';
+  boolean isStudent = true;
+     String name = "alice";
+        
+        System.out.println("name:" + name); 
+        System.out.println("age:" + age); 
+        System.out.println("price:" + price); 
+        System.out.println("weight:" + weight); 
+        System.out.println("grade:" + grade); 
+        System.out.println("isStudent:" + isStudent); 
+        
+    Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("\nEnter your city: ");
+    String userCity = scanner.nextLine(); 
+        System.out.println("You live in: " + userCity);
+      
+        System.out.print("\nEnter a sentence about yourself: ");
+    String fullSentence = scanner.nextLine(); 
+        System.out.println("You said: " + fullSentence);
+
+ int a = 10, b = 3;
+        System.out.println("a + b = " + (a + b));
+        System.out.println("a - b = " + (a - b)); 
+        System.out.println("a * b = " + (a * b)); 
+        System.out.println("a / b = " + (a / b)); 
+        System.out.println("a % b = " + (a % b)); 
+        
+   double x = 10, y = 3;
+        System.out.println("x / y = " + (x / y)); 
+
+        System.out.println("\na == b = " + (a == b));
+        System.out.println("a != b = " + (a != b));
+        System.out.println("a > b = " + (a > b)); 
+        System.out.println("a < b = " + (a < b));
+        System.out.println("a >= b = " + (a >= b));
+        System.out.println("a <= b = " + (a <= b));
+
+  boolean p = true, q = false;
+        System.out.println("\np && q: " + (p && q));
+        System.out.println("p || q: " + (p || q)); 
+        System.out.println("!p : " + (!p));
+        System.out.println("!q : " + (!q));
+        
+  int score = 50;
+        System.out.println("\nscore after += 10: " + score);
+        score *= 2;
+        System.out.println("score after *=2: " + score); 
+        
+ int counter = 5;
+        System.out.println("\ncounter++ (post): " + counter++);
+        System.out.println("counter now: " + counter++);
+        System.out.println("++counter (pre): " + (++counter)); 
+
+        System.out.print("\nEnter your exam score: ");
+ int examScore = scanner.nextInt();     
+        
+ if (examScore >= 90) {      
+            System.out.println("Grade: A");
+        } else if (examScore >= 80) {
+            System.out.println("Grade: B");
+        } else if (examScore >= 70) {
+            System.out.println("Grade: C");
+        } else {
+            System.out.println("Grade: F");
+        }
+        
+        scanner.close();
+    }
+}
